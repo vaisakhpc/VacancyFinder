@@ -1,0 +1,12 @@
+sum:
+    path: /sum/{a}/{b}
+    controller: App\Controller\SumController::sumAction
+job:
+    path: /job/{id}
+    controller: App\Controller\JobController::fetchById
+job/location:
+    path: /job/location/{location}/{sortItem}
+    controller: App\Controller\JobController::fetchByLocation
+job/match:
+    path: /job/match/{skillSet}/{seniority}
+    controller: App\Controller\JobController::fetchMostInterestingPosition

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="47" assertions="64" errors="0" failures="0" skipped="0" time="26.839327">
+    <testsuite name="Tests\App\Model\JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" tests="7" assertions="7" errors="0" failures="0" skipped="0" time="0.491620">
+      <testcase name="testFetchById" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="30" assertions="1" time="0.242833"/>
+      <testcase name="testNotFoundValueFromFetchById" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="37" assertions="1" time="0.088072"/>
+      <testcase name="testFetchByLocation" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="44" assertions="1" time="0.061002"/>
+      <testcase name="testFetchByLocationWithCity" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="51" assertions="1" time="0.019585"/>
+      <testcase name="testUnprocessableEntityHttpExceptionFromFetchByLocation" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="58" assertions="1" time="0.023507"/>
+      <testcase name="testFetchMostInterestingPosition" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="65" assertions="1" time="0.018819"/>
+      <testcase name="testEmptyValueFromFetchMostInterestingPosition" class="Tests\App\Model\JobDomainTest" classname="Tests.App.Model.JobDomainTest" file="/www/tests/Domain/JobDomainTest.php" line="72" assertions="1" time="0.037802"/>
+    </testsuite>
+    <testsuite name="Tests\App\Service\ApiExceptionSubscriberTest" file="/www/tests/EventListener/ApiExceptionSubscriberTest.php" tests="3" assertions="5" errors="0" failures="0" skipped="0" time="0.389675">
+      <testcase name="testgetSubscribedEvents" class="Tests\App\Service\ApiExceptionSubscriberTest" classname="Tests.App.Service.ApiExceptionSubscriberTest" file="/www/tests/EventListener/ApiExceptionSubscriberTest.php" line="19" assertions="1" time="0.051571"/>
+      <testcase name="testOnKernelExceptionForHttpException" class="Tests\App\Service\ApiExceptionSubscriberTest" classname="Tests.App.Service.ApiExceptionSubscriberTest" file="/www/tests/EventListener/ApiExceptionSubscriberTest.php" line="26" assertions="2" time="0.328724"/>
+      <testcase name="testOnKernelExceptionForErrorException" class="Tests\App\Service\ApiExceptionSubscriberTest" classname="Tests.App.Service.ApiExceptionSubscriberTest" file="/www/tests/EventListener/ApiExceptionSubscriberTest.php" line="41" assertions="2" time="0.009380"/>
+    </testsuite>
+    <testsuite name="App\Tests\JobFeatureTest" file="/www/tests/JobFeatureTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="25.688524">
+      <testcase name="testFetchByID" class="App\Tests\JobFeatureTest" classname="App.Tests.JobFeatureTest" file="/www/tests/JobFeatureTest.php" line="13" assertions="3" time="24.465444"/>
+      <testcase name="testFetchByLocation" class="App\Tests\JobFeatureTest" classname="App.Tests.JobFeatureTest" file="/www/tests/JobFeatureTest.php" line="24" assertions="3" time="0.638126"/>
+      <testcase name="testMostInterestingPosition" class="App\Tests\JobFeatureTest" classname="App.Tests.JobFeatureTest" file="/www/tests/JobFeatureTest.php" line="35" assertions="2" time="0.584954"/>
+    </testsuite>
+    <testsuite name="Tests\App\Model\CompanyTest" file="/www/tests/Model/CompanyTest.php" tests="5" assertions="8" errors="0" failures="0" skipped="0" time="0.020719">
+      <testcase name="testGetSize" class="Tests\App\Model\CompanyTest" classname="Tests.App.Model.CompanyTest" file="/www/tests/Model/CompanyTest.php" line="19" assertions="1" time="0.003191"/>
+      <testcase name="testGetDomain" class="Tests\App\Model\CompanyTest" classname="Tests.App.Model.CompanyTest" file="/www/tests/Model/CompanyTest.php" line="25" assertions="1" time="0.003659"/>
+      <testcase name="testGetCountry" class="Tests\App\Model\CompanyTest" classname="Tests.App.Model.CompanyTest" file="/www/tests/Model/CompanyTest.php" line="31" assertions="1" time="0.004230"/>
+      <testcase name="testGetCity" class="Tests\App\Model\CompanyTest" classname="Tests.App.Model.CompanyTest" file="/www/tests/Model/CompanyTest.php" line="37" assertions="1" time="0.005901"/>
+      <testcase name="testJsonSerialize" class="Tests\App\Model\CompanyTest" classname="Tests.App.Model.CompanyTest" file="/www/tests/Model/CompanyTest.php" line="43" assertions="4" time="0.003738"/>
+    </testsuite>
+    <testsuite name="Tests\App\Model\ErrorTest" file="/www/tests/Model/ErrorTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.009055">
+      <testcase name="testGetCode" class="Tests\App\Model\ErrorTest" classname="Tests.App.Model.ErrorTest" file="/www/tests/Model/ErrorTest.php" line="19" assertions="1" time="0.003001"/>
+      <testcase name="testGetMessage" class="Tests\App\Model\ErrorTest" classname="Tests.App.Model.ErrorTest" file="/www/tests/Model/ErrorTest.php" line="25" assertions="1" time="0.002913"/>
+      <testcase name="testJsonSerialize" class="Tests\App\Model\ErrorTest" classname="Tests.App.Model.ErrorTest" file="/www/tests/Model/ErrorTest.php" line="31" assertions="2" time="0.003141"/>
+    </testsuite>
+    <testsuite name="Tests\App\Model\JobCollectionTest" file="/www/tests/Model/JobCollectionTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.010472">
+      <testcase name="testAddMethod" class="Tests\App\Model\JobCollectionTest" classname="Tests.App.Model.JobCollectionTest" file="/www/tests/Model/JobCollectionTest.php" line="34" assertions="1" time="0.004314"/>
+      <testcase name="testcountMethod" class="Tests\App\Model\JobCollectionTest" classname="Tests.App.Model.JobCollectionTest" file="/www/tests/Model/JobCollectionTest.php" line="42" assertions="1" time="0.002801"/>
+      <testcase name="testJsonSerialize" class="Tests\App\Model\JobCollectionTest" classname="Tests.App.Model.JobCollectionTest" file="/www/tests/Model/JobCollectionTest.php" line="51" assertions="1" time="0.003357"/>
+    </testsuite>
+    <testsuite name="Tests\App\Model\JobTest" file="/www/tests/Model/JobTest.php" tests="7" assertions="12" errors="0" failures="0" skipped="0" time="0.029333">
+      <testcase name="testGetId" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="28" assertions="1" time="0.004627"/>
+      <testcase name="testGetJobTitle" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="34" assertions="1" time="0.003562"/>
+      <testcase name="testGetSeniority" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="40" assertions="1" time="0.003523"/>
+      <testcase name="testGetRequiredSkills" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="46" assertions="1" time="0.003815"/>
+      <testcase name="testGetSalary" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="52" assertions="1" time="0.004098"/>
+      <testcase name="testGetCompany" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="58" assertions="1" time="0.003392"/>
+      <testcase name="testJsonSerialize" class="Tests\App\Model\JobTest" classname="Tests.App.Model.JobTest" file="/www/tests/Model/JobTest.php" line="64" assertions="6" time="0.006316"/>
+    </testsuite>
+    <testsuite name="Tests\App\Model\SalaryTest" file="/www/tests/Model/SalaryTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.013621">
+      <testcase name="testGetAmount" class="Tests\App\Model\SalaryTest" classname="Tests.App.Model.SalaryTest" file="/www/tests/Model/SalaryTest.php" line="19" assertions="1" time="0.004646"/>
+      <testcase name="testGetCurrency" class="Tests\App\Model\SalaryTest" classname="Tests.App.Model.SalaryTest" file="/www/tests/Model/SalaryTest.php" line="25" assertions="1" time="0.003358"/>
+      <testcase name="testJsonSerialize" class="Tests\App\Model\SalaryTest" classname="Tests.App.Model.SalaryTest" file="/www/tests/Model/SalaryTest.php" line="31" assertions="2" time="0.005617"/>
+    </testsuite>
+    <testsuite name="Tests\App\Service\CsvServiceTest" file="/www/tests/Service/Input/CsvServiceTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.024068">
+      <testcase name="testReadToArray" class="Tests\App\Service\CsvServiceTest" classname="Tests.App.Service.CsvServiceTest" file="/www/tests/Service/Input/CsvServiceTest.php" line="16" assertions="1" time="0.024068"/>
+    </testsuite>
+    <testsuite name="Tests\App\Service\JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" tests="7" assertions="7" errors="0" failures="0" skipped="0" time="0.142354">
+      <testcase name="testFetchById" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="28" assertions="1" time="0.014357"/>
+      <testcase name="testNotFoundValueFromFetchById" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="35" assertions="1" time="0.014625"/>
+      <testcase name="testFetchByLocation" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="42" assertions="1" time="0.017278"/>
+      <testcase name="testFetchByLocationWithCity" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="49" assertions="1" time="0.040496"/>
+      <testcase name="testUnprocessableEntityHttpExceptionFromFetchByLocation" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="56" assertions="1" time="0.015186"/>
+      <testcase name="testFetchMostInterestingPosition" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="63" assertions="1" time="0.018599"/>
+      <testcase name="testEmptyValueFromFetchMostInterestingPosition" class="Tests\App\Service\JobServiceTest" classname="Tests.App.Service.JobServiceTest" file="/www/tests/Service/Job/JobServiceTest.php" line="70" assertions="1" time="0.021813"/>
+    </testsuite>
+    <testsuite name="Tests\App\Service\MapServiceTest" file="/www/tests/Service/Map/MapServiceTest.php" tests="4" assertions="4" errors="0" failures="0" skipped="0" time="0.014348">
+      <testcase name="testMapToResponse" class="Tests\App\Service\MapServiceTest" classname="Tests.App.Service.MapServiceTest" file="/www/tests/Service/Map/MapServiceTest.php" line="40" assertions="1" time="0.003594"/>
+      <testcase name="testmapToResponseCollection" class="Tests\App\Service\MapServiceTest" classname="Tests.App.Service.MapServiceTest" file="/www/tests/Service/Map/MapServiceTest.php" line="48" assertions="1" time="0.003839"/>
+      <testcase name="testmapSalaryFromResult" class="Tests\App\Service\MapServiceTest" classname="Tests.App.Service.MapServiceTest" file="/www/tests/Service/Map/MapServiceTest.php" line="56" assertions="1" time="0.003198"/>
+      <testcase name="testmapCompanyFromResult" class="Tests\App\Service\MapServiceTest" classname="Tests.App.Service.MapServiceTest" file="/www/tests/Service/Map/MapServiceTest.php" line="64" assertions="1" time="0.003717"/>
+    </testsuite>
+    <testsuite name="Tests\App\Service\SumServiceTest" file="/www/tests/Service/SumServiceTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.005537">
+      <testcase name="testMakeSum" class="Tests\App\Service\SumServiceTest" classname="Tests.App.Service.SumServiceTest" file="/www/tests/Service/SumServiceTest.php" line="16" assertions="1" time="0.005537"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
