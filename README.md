@@ -1,4 +1,4 @@
-### Auto1 Coding Challenge
+### Coding Challenge
 
 # Steps to launch the application
   - ```docker-compose build```
